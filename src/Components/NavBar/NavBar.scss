@@ -1,6 +1,7 @@
 .hithere{
+  opacity:0;
   display:inline-block;
-  animation: appeartext 2s ;
+  animation: appeartext 7s ;
   padding: 3px 5px 3px 12px;
  clip-path: polygon(10.47% 5.26%, 100.01% 5.37%, 100% 91.83%, 11.19% 92.15%, 0px 91.12%, 10.44% 71.66%, 10.46% 20.52%);
   border-radius: 3px;
@@ -16,11 +17,13 @@
     
     
   }
-  100%{
-    opacity: 1;
-    width:76px;
+  30%{
+    width:82px;
+    opacity:1;
     color:rgb(113, 112, 112);
-    
   }
+  100%{
+    opacity: 0;
+    }
   
 }
