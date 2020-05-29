@@ -1,35 +1,89 @@
+
 .intro{
-    font-family: 'Comfortaa', cursive;;
+    text-shadow: 1px 1px gray;
+    animation: bouncing 5s infinite;
+    font-family: 'Comfortaa', cursive;
     position: absolute; 
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    margin-top: 25%;
+    overflow:hidden;
 color:white;
-    width:70vh;
+    
     z-index: 12;
     background-color: rgba(255, 250, 250, 0);
     border:none;
-    @media only screen and (max-width: 1366px){
-        margin-top: 20%;
+    @media only screen and (orientation: portrait) {
+        margin-top: 30vh;
+        width:60vw;
+        height:auto;
+        font-size: 4vw;
+        
     }
-    
-    @media only screen and (max-width:768px)
-    {
-        width: 71vw;  
-        margin-top: 40%;
-    }    
-}
+    @media only screen and (orientation: landscape) {
+        width:60vw;
+        font-size: 2vw;
+    height:auto;margin-top: 25vh;
+    }
+    // @media only screen and (max-width: 600px) {
+    //     margin-top: 20vh;
+    //     width:60vw;
+    // } 
 
-@media only screen and (orientation: portrait){
-    .imgslide1{
-        content: url(./portrait/portrait1.jpg); 
+    // /* Small devices (portrait tablets and large phones, 600px and up) */
+    // @media only screen and (min-width: 600px) and (orientation: landscape) {
+    //     margin-top: 25vh;
+    //     width:72vw;
+    // } 
+    
+    // /* Medium devices (landscape tablets, 768px and up) */
+    // @media only screen and (min-width: 768px) and (orientation:portrait){
+    //     margin-top:40vh;
+    //     width:70vw;
+    // } 
+   
+    // /* Large devices (laptops/desktops, 992px and up) */
+    // @media only screen and (min-width: 1024px) {
+    //     font-size: 23px !important;
+    // } 
+    
+    // /* Extra large devices (large laptops and desktops, 1200px and up) */
+    // @media only screen and (min-width: 1200px) {}
+}
+@keyframes bouncing{
+    0%{
+        transform: translateY(0);
+        opacity:1;
+       
     }
+    20%{
+        
+       
+        transform: translateY(-20%);
+        opacity:0.001;
+    }
+   
+    100%{
+        
+        transform:translateY(0);
+        opacity:1
+    }
+
+}
+@media only screen and (orientation: portrait){
+    .imgslide1, .imgslide1::after{
+        content: url("./portrait/portrait1.jpg") !important; 
+        
+        
+    }
+
+    
     .imgslide2{
-        content: url(./portrait//portrait2.jpg);
+        content: url("./portrait//portrait2.jpg") !important;
+        
     }
     .imgslide3{
-        content:url(./portrait/portrait3.jpg)
+        content:url("./portrait/portrait3.jpg") !important;
     }
 }

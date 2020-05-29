@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './CarouselP.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init({once:true});
+
+
+
 class CarouselP extends Component {
   constructor(props){
     super(props);
@@ -18,17 +18,17 @@ class CarouselP extends Component {
         return (
           
             <React.Fragment >
-              <div className="intro" data-aos="slide-down" data-aos-duration="1300">
+              <div className="intro" >
                 
-                <h2 className="h1">Hello World!</h2>
-                <p className="h2">My name is <em>Hoàng Minh Tân</em><br/> You are visiting my website!</p>
-                <p className="h5">Take a look at my photo first.</p>
+                <h1 >Hello World!</h1>
+                <p>My name is <em>Hoàng Minh Tân</em><br/> You are visiting my website!</p>
+                <p className="h4">Take a look at my photo first.</p>
              
              </div>
                 <Carousel id="Galery">
   <Carousel.Item>
     <img
-      className="d-block w-100 imgslide1"
+      className="d-block w-100 imgslide1 "
       src={this.state.source[0]}
       alt="First slide"
     />
