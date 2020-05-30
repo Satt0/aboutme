@@ -5,14 +5,6 @@ import './CarouselP.scss';
 
 
 class CarouselP extends Component {
-  constructor(props){
-    super(props);
-   this.state={
-     source:this.props.source1
-   }
-    
-  }
-
     render() {
     
         return (
@@ -20,36 +12,24 @@ class CarouselP extends Component {
             <React.Fragment >
               <div className="intro" >
                 
-                <h1 >Hello World!</h1>
-                <p>My name is <em>Hoàng Minh Tân</em><br/> You are visiting my website!</p>
-                <p className="h4">Take a look at my photo first.</p>
+                <h2 >Hello World!</h2>
+                <h4>My name is <em>Hoàng Minh Tân</em><br/> You are visiting my website!</h4>
+                <h6>Take a look at my photo first.</h6>
              
              </div>
-                <Carousel id="Galery">
+                <Carousel id="galery">
   <Carousel.Item>
-    <img
-      className="d-block w-100 imgslide1 "
-      src={this.state.source[0]}
-      alt="First slide"
-    />
-    
+    <div className="w-100 imgslide1">
+    </div>
   </Carousel.Item>
   <Carousel.Item>
-    <img
-      className="d-block w-100 imgslide2"
-      
-      src={this.state.source[1]}
-      alt="Third slide"
-    />
-
+  <div className="w-100 imgslide2">
+    </div>
 
   </Carousel.Item>
   <Carousel.Item>
-    <img
-      className="d-block w-100 imgslide3" 
-      src={this.state.source[2]}
-      alt="Third slide"
-    />
+  <div className="w-100 imgslide3">
+    </div>
 
     
   </Carousel.Item>

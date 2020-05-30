@@ -1,29 +1,50 @@
-.hithere{
-  opacity:0;
-  display:inline-block;
-  animation: appeartext 7s ;
-  padding: 3px 5px 3px 12px;
- clip-path: polygon(10.47% 5.26%, 100.01% 5.37%, 100% 91.83%, 11.19% 92.15%, 0px 91.12%, 10.44% 71.66%, 10.46% 20.52%);
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color:grey;
-  font-family: 'Dancing Script';
-}
-@keyframes appeartext{
-  0%{
-    opacity: 0;
-    width:0px;
-    color:rgb(255, 255, 255);
+.nav{
+  a{
+   
+    li{
+      margin-left: 12px;
+      color: rgb(255, 212, 132);
+      
+      cursor: pointer;
+      transition: all 0.3s;
+      opacity:0.7;
+    }
+    li:hover{
+      opacity:1;animation: active 0.4s;
+      
+    }
     
+}
+a:hover{
+  text-decoration: none;
+}
+  position: fixed;
+  z-index: 123;
+  width:100vw;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(156, 156, 156,0.9);
+  height:49px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Comfortaa';
+  
+}
+
+@keyframes active{
+  0%{
+    transform: translateY(0);
     
   }
   30%{
-    width:82px;
-    opacity:1;
-    color:rgb(113, 112, 112);
+    transform: translateY(-4px);
+    
   }
-  100%{
-    opacity: 0;
-    }
   
+  100%{
+    transform: translateY(0);
+    
+  }
 }

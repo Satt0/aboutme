@@ -11,7 +11,7 @@
     .textcontainer{width:100vw; background-color: white;
     #detail{
         
-        animation: movetext 8s infinite;
+        animation: movetext 6s infinite;
        
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
@@ -29,13 +29,13 @@
             margin: 3px auto;
         }
         font-family: 'Comfortaa', cursive;;
-        opacity:0.7;
+        opacity:0.9;
         width:33.33333333vw;
         height:50vh;
-        border-top: 3px solid gray;
-        border-right: 2px solid gray;
+        border-top: 8px solid gray;
+        border-right: 1px solid gray;
         color:white;
-        background-color: rgb(94, 89, 89);
+        background-color: rgb(87, 86, 86);
         @media only screen and (orientation: portrait){
             width:100vw;
             height : 40vh;
@@ -51,11 +51,11 @@
 0%{
     transform: translateX(-100%);
 }
-10%{
-    transform:translateX(-3%);
+30%{
+    transform:translateX(-8%);
 }
 90%{
-transform: translateX(3%);
+transform: translateX(0%);
 }
 100%{
     transform: translateX(100%);
