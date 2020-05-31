@@ -5,7 +5,7 @@
     justify-content: space-around;
     background-color: gray;
     overflow: hidden;
-    background-image: url(./landscape3.jpg);
+    background-image: url(./landscape3.jpeg);
     background-position: center;
     background-size: cover;
     .textcontainer{width:100vw; background-color: white;
@@ -28,7 +28,8 @@
             list-style-type: none;
             margin: 3px auto;
         }
-        font-family: 'Comfortaa', cursive;;
+        font-family: 'Comfortaa', cursive;
+        color:gray;
         opacity:0.9;
         width:33.33333333vw;
         height:50vh;

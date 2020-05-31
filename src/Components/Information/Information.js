@@ -1,24 +1,8 @@
 import React, { Component } from 'react';
-
-import {Card,Button,Container,Nav,ButtonGroup} from 'react-bootstrap';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 import './Information.scss'
-
 class Information extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            
-
-        }
-        
-    }
-    handleToggle(e){
-        e.preventDefault();
-       
-    }
+   
+   
     render() {
        
         return (
@@ -38,7 +22,7 @@ class Information extends Component {
                <div className="textitem" >
                <li className="h4"  >Study at</li>
                <li>Hanoi University of Science and Technology</li>
-                       <li>Field: Computer Engineer</li>
+                       <li>Major: Computer Engineer</li>
                        <li>Academic year: 64th</li>
                        <li>Bachelor Degree</li>
                        
