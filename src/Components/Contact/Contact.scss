@@ -12,7 +12,9 @@ $ghco:#211F1F;
 }
 .contact-container{
     display:flex;
-    flex-wrap: wrap;
+    @media only screen and (orientation: portrait){
+        flex-wrap: wrap;
+    }
     .contact-item{
         overflow: hidden;
         width:33.33333vw;

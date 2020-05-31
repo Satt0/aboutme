@@ -1,14 +1,4 @@
-.containertext{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: gray;
-    overflow: hidden;
-    background-image: url(./landscape3.jpeg);
-    background-position: center;
-    background-size: cover;
-    .textcontainer{width:100vw; background-color: white;
+.textcontainer{width:100vw; background-color: white;
     #detail{
         
         animation: movetext 6s infinite;
@@ -20,6 +10,19 @@
         
     }
 }
+.containertext{
+    display:flex;
+    flex-direction: row;
+   
+    justify-content: space-around;
+    background-color: gray;
+    overflow: hidden;
+    background-image: url(./landscape3.jpg);
+    background-position: center;
+    background-size: cover;
+    @media only screen and (orientation:portrait){
+        flex-wrap: wrap;
+    }
     .textitem{
         display:flex;
         flex-direction: column;

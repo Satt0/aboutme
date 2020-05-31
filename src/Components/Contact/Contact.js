@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Contact.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+AOS.init({once:true});
 class Contact extends Component {
     render() {
         
