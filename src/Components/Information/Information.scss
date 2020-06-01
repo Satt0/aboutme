@@ -1,19 +1,15 @@
 .textcontainer{width:100vw; background-color: white;
-    #detail{
-        
+    #detail{       
         animation: movetext 6s infinite;
-       
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         height:30px;
-        padding-top:3px;
-        
+        padding-top:3px;     
     }
 }
 .containertext{
     display:flex;
     flex-direction: row;
-   
     justify-content: space-around;
     background-color: gray;
     overflow: hidden;

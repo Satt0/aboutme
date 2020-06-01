@@ -1,33 +1,25 @@
 import React, { Component } from 'react';
 import './Information.scss'
 class Information extends Component {
-   
-   
     render() {
-       
-        return (
+         return (
             <React.Fragment>
                 <div className="textcontainer"><div id="detail" className="h3" ><p>All about me</p></div></div>
-            <div className="containertext" id="detail">
-               
-                
-               <div className="textitem">
-                   
+            <div className="containertext" id="detail"> 
+               <div className="textitem">              
                <li className="h4"  >Detail</li>
                        <li><strong>Name: Hoàng Minh Tân</strong></li>
                        <li>date of birth: 06.06.2001</li>
                        <li>Gender: Male</li>
                        <li>Height: 1.73m</li>
-                       <li>Weight: 65kg</li>
-                  
-               </div>
+                       <li>Weight: 65kg</li>                 
+             </div>
                <div className="textitem" >
                <li className="h4"  >Study at</li>
                <li>Hanoi University of Science and Technology</li>
                        <li>Major: Computer Engineer</li>
                        <li>Academic year: 64th</li>
-                       <li>Bachelor Degree</li>
-                       
+                       <li>Bachelor Degree</li>                     
                </div>
                <div className="textitem" >
                <li className="h4"  > Hobby</li>
@@ -35,11 +27,9 @@ class Information extends Component {
                        <li>Street Workout</li>
                        <li>Playing Games</li>
                        <li>Reading Books</li>
-               </div>
-  
+               </div>  
             </div></React.Fragment>
         );
     }
 }
-
 export default (Information);
