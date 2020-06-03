@@ -11,21 +11,21 @@ class Contact extends Component {
             <div className="contact-container" id="contact">
                 <div className="contact-item" data-aos="fade-in" >                 
                     <div className="button-container fb">
-                       <a href="https://www.facebook.com/hoangminhtan6601/" target="_blank" rel="noopener noreferrer"> <button className="fb-bt">Folow Facebook</button></a>
+                       <a href="https://www.facebook.com/hoangminhtan6601/" target="_blank" rel="noopener noreferrer"> <button className="fb-bt">Follow Facebook</button></a>
                     </div>
                 </div>
                 <div className="contact-item " data-aos="fade-in" data-aos-delay="50">              
                     <div className="button-container gh">
-                    <a href="https://github.com/Satt0" target="_blank" rel="noopener noreferrer">   <button className="gh-bt">Folow Github</button></a>
+                    <a href="https://github.com/Satt0" target="_blank" rel="noopener noreferrer">   <button className="gh-bt">Follow Github</button></a>
                     </div>
                 </div>
                 <div className="contact-item " data-aos="fade-in" data-aos-delay="100">               
                     <div className="button-container ig">
-                    <a href="https://www.instagram.com/minh_taan/" target="_blank" rel="noopener noreferrer">     <button className="ig-bt">Folow Insta</button></a>
+                    <a href="https://www.instagram.com/minh_taan/" target="_blank" rel="noopener noreferrer">     <button className="ig-bt">Folow Instagram</button></a>
                     </div>
                 </div>
             </div>
-            <div className="copyright">&copy;<em>Hoàng Minh Tân &#8226;</em><strong> Email:</strong><em>minhtanbg6601@gmail.com</em></div>
+            <div className="copyright"><em>Email: minhtanbg6601@gmail.com</em></div>
             </React.Fragment>
         );
     }

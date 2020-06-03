@@ -11,7 +11,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="nav">
-              <a onClick={()=>{document.getElementById('galery').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}}><li>Galery</li></a>
+              <a href="#galery"><li>Galery</li></a>
               <a href="#detail"> <li >Detail</li></a> 
               <a href="#contact"> <li>Contact</li></a>
   

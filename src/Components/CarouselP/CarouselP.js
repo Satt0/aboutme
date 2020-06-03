@@ -6,7 +6,7 @@ class CarouselP extends Component {
     return ( 
             <React.Fragment >
               <div className="intro" >               
-                <h2 >Hello World!</h2>
+                <h2 >Hi There!</h2>
                 <h4>My name is <em>Tân</em><br/> You are visiting my website!</h4>
                 <h6>Take a look at my photo first.</h6>             
              </div>
