@@ -21,7 +21,7 @@ class Contact extends Component {
                 </div>
                 <div className="contact-item " data-aos="fade-in" data-aos-delay="100">               
                     <div className="button-container ig">
-                    <a href="https://www.instagram.com/minh_taan/" target="_blank" rel="noopener noreferrer">     <button className="ig-bt">Folow Instagram</button></a>
+                    <a href="https://www.instagram.com/minh_taan/" target="_blank" rel="noopener noreferrer">     <button className="ig-bt">Follow Instagram</button></a>
                     </div>
                 </div>
             </div>
