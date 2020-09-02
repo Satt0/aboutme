@@ -1,24 +1,33 @@
-import React from 'react';
-import './NavBar.scss';
+import React from "react";
+import "./NavBar.scss";
+import ScrollIntoView from "react-scroll-into-view";
 class NavBar extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
-      target:'galery'
-    }
+    this.state = {
+      target: "galery",
+    };
   }
- 
-    render() {
-        return (
-            <div className="nav">
-              <a href="#galery"><li>Galery</li></a>
-              <a href="#detail"> <li >Detail</li></a> 
-              <a href="#contact"> <li>Contact</li></a>
-  
+  scrollInto(e) {
+    e.preventDefault();
+    console.log(e.target);
+  }
+  render() {
+    return (
+      <div className="nav">
+        <ScrollIntoView selector="#galery">
+          <li>Galery</li>
+        </ScrollIntoView>
+        <ScrollIntoView selector="#infor">
+          <li>Detail</li>
+        </ScrollIntoView>
 
-            </div>
-        );
-    }
+        <ScrollIntoView selector="#contact">
+          <li>Contact</li>
+        </ScrollIntoView>
+      </div>
+    );
+  }
 }
 
 export default NavBar;

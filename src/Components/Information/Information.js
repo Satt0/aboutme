@@ -4,7 +4,7 @@ class Information extends Component {
     render() {
          return (
             <React.Fragment>
-                <div className="textcontainer"><div id="detail" className="h3" ><p>All about me</p></div></div>
+                <div id="infor" className="textcontainer"><div id="detail" className="h3" ><p>All about me</p></div></div>
             <div className="containertext" id="detail"> 
                <div className="textitem">              
                <li className="h4"  >Detail</li>
