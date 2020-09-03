@@ -28,8 +28,13 @@
   justify-content: space-around;
   
   overflow: hidden;
-  @include parallax-background("./landscape3.jpg");
+  @media only screen and (orientation:landscape){
+    @include parallax-background("./landscape3.jpg");
+  }
   @media only screen and (orientation: portrait) {
+   background-size: cover;
+    background-position: center;
+   background-image: url("./landscape3.jpg");
     flex-wrap: wrap;
   }
   .textitem {
