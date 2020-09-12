@@ -3,8 +3,8 @@ import './Contact.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({once:true});
-class Contact extends Component {
-    render() {       
+const Contact =()=> {
+         
         return (
             <React.Fragment>
                 <div className="socialmedia"><h2>Social Media</h2></div>
@@ -29,6 +29,6 @@ class Contact extends Component {
             </React.Fragment>
         );
     }
-}
+
 
 export default (Contact);

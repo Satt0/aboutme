@@ -1,0 +1,23 @@
+.toggle-lang{
+    position: absolute;
+    z-index: 1212121212;
+    color:blue;
+    font-size: 20 ;
+    width:50px;
+    height:50px;
+    background-color: white;
+    top:500px;
+    left: 0;
+    animation: slidedown 1s forwards;
+}
+@keyframes slidedown{
+    from {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}

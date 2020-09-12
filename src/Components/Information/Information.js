@@ -1,18 +1,23 @@
-import React, { Component } from 'react';
-import './Information.scss'
-class Information extends Component {
-    render() {
+import React from 'react';
+import './Information.scss';
+import {useSelector} from 'react-redux'
+
+const Information =()=> {
+    const src=useSelector(state=>state.language)
+    const display=useSelector(state=>state.display)
+    const lang=src[display].detail;
+    console.log(lang);
          return (
             <React.Fragment>
                 <div id="infor" className="textcontainer"><div id="detail" className="h3" ><p>All about me</p></div></div>
             <div className="containertext" id="detail"> 
                <div className="textitem">              
-               <li className="h4"  >Detail</li>
-                       <li><strong>Name: Hoàng Minh Tân</strong></li>
-                       <li>date of birth: 06.06.2001</li>
-                       <li><strong>Now: Single</strong></li>
-                       <li>Height: 1.73m</li>
-                       <li>Weight: 65kg</li>                 
+         <li className="h4"  >{lang.detail.title}</li>
+         <li><strong>{lang.detail.name}</strong></li>
+                       <li>{lang.detail.dateOfBirth}</li>
+                       <li><strong>{lang.detail.now}</strong></li>
+                       <li>{lang.detail.weight}</li>
+                       <li>{lang.detail.height}</li>                 
              </div>
                <div className="textitem" >
                <li className="h4"  >Study at</li>
@@ -31,5 +36,5 @@ class Information extends Component {
             </div></React.Fragment>
         );
     }
-}
+
 export default (Information);

@@ -1,116 +1,113 @@
-$fbcolor:#3b5998;
-$ghco:#211F1F;
-.socialmedia{
- 
-    animation: movetext 6s infinite;
-       
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    height:43px;
-    padding-top:3px;
-    
+$fbcolor: #3b5998;
+$ghco: #211f1f;
+$fb-img: "./fb.PNG";
+$ig-img:'./ig.PNG';
+$gh-img:'./gh.PNG';
+%bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.contact-container{
-    display:flex;
-    @media only screen and (orientation: portrait){
-        flex-wrap: wrap;
-    }
-    .contact-item{
-        overflow: hidden;
-        width:33.33333vw;
-        height:400px;
-        
-        @media only screen and (orientation: portrait){
-            width:100vw;
-            
-        }
+@mixin bg-img($img, $color) {
+  border-top: 2px solid $color;
+  background-image: url($img);
+}
+.socialmedia {
+  animation: movetext 6s infinite;
 
-        .button-container{
-            display:flex;
-            justify-content: center;
-            align-items: flex-end;
-            height:100%;
-            button{
-                margin-bottom: 15px;
-                border: none;
-               border-radius: 5px;
-               color:white;
-               height:35px;
-               opacity:0.9;
-            }
-            button:hover{
-                opacity:1;
-                animation:active 1s infinite;
-            }
-            .fb-bt{
-                background-color: $fbcolor;
-                
-            }
-            .ig-bt{
-                background-color: pink;
-            }
-            .gh-bt{
-                background-color: $ghco;
-                
-            }
-        }
-        .fb{
-            border-top: 2px solid $fbcolor;
-            background-image: url(./fb.PNG);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .ig{
-            border-top: 2px solid pink;
-            background-image: url(./ig.PNG);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .gh{
-            border-top: 2px solid $ghco;
-            background-image: url(./gh.PNG);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }        
-    }
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  height: 43px;
+  padding-top: 3px;
 }
-.copyright{
-    background-color: rgba(85, 85, 85,.5);
-    height:50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:white;
-}
-@keyframes active{
-    0%{
-      transform: translateY(0);
-      
+.contact-container {
+  display: flex;
+  @media only screen and (orientation: portrait) {
+    flex-wrap: wrap;
+  }
+  .contact-item {
+    overflow: hidden;
+    width: 33.33333vw;
+    height: 400px;
+
+    @media only screen and (orientation: portrait) {
+      width: 100vw;
     }
-    30%{
-      transform: translateY(-4px);
-      
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 100%;
+      button {
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        height: 35px;
+        opacity: 0.9;
+      }
+      button:hover {
+        opacity: 1;
+        animation: active 1s infinite;
+      }
+      .fb-bt {
+        background-color: $fbcolor;
+      }
+      .ig-bt {
+        background-color: pink;
+      }
+      .gh-bt {
+        background-color: $ghco;
+      }
     }
-    
-    100%{
-      transform: translateY(0);
-      
+    .fb {
+      @include bg-img($fb-img,$fbcolor);
+      @extend %bg;
+    }
+    .ig {
+      border-top: 2px solid pink;
+      background-image: url(./ig.PNG);
+      @include bg-img($ig-img,pink);
+      @extend %bg;
+    }
+    .gh {
+        @include bg-img($gh-img,$ghco);
+      @extend %bg;
     }
   }
-  @keyframes movetext{
-    0%{
-        transform: translateX(-100%);
-    }
-    30%{
-        transform:translateX(-8%);
-    }
-    90%{
+}
+.copyright {
+  background-color: rgba(85, 85, 85, 0.5);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@keyframes active {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes movetext {
+  0% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-8%);
+  }
+  90% {
     transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(100%);
-    }
-    }
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import {useSelector} from 'react-redux'
 import './CarouselP.scss';
-class CarouselP extends Component {
-    render() {
+const CarouselP=()=>  {
+  const src=useSelector(state=>state.language)
+  const display=useSelector(state=>state.display)
+  const lang=src[display].carousel;
     return ( 
             <React.Fragment >
               <div className="intro" >               
-                <h2 >Hi There!</h2>
-                <h4>My name is <em>Tân</em><br/> You are visiting my website!</h4>
-                <h6>Take a look at my photo first.</h6>             
+                <h2 >{lang.title}</h2>
+    <h4>{lang.content}</h4>
+    <h6>{lang.comment}</h6>             
              </div>
                 <Carousel id="galery">
                     <Carousel.Item>
@@ -24,5 +27,5 @@ class CarouselP extends Component {
             </React.Fragment>
         );
     }
-}
+
 export default (CarouselP);

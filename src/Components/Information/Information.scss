@@ -45,6 +45,9 @@
       list-style-type: none;
       margin: 3px auto;
     }
+    li.h4{
+      border-bottom: 1px solid white;
+    }
     font-family: "Comfortaa", cursive;
     color: gray;
     opacity: 0.9;
@@ -57,7 +60,7 @@
     @media only screen and (orientation: portrait) {
       width: 100vw;
       height: 40vh;
-      margin-bottom: 2px;
+      
     }
   }
 }

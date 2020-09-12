@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CarouselP from './Components/CarouselP/CarouselP'
 import Information from './Components/Information/Information';
 import Contact from './Components/Contact/Contact'
+import Toggle from './Components/Toggle/Toggle'
 function App() {
   return (
     <div className="App text-center">
@@ -12,6 +13,7 @@ function App() {
       <CarouselP />
       <Information/>
       <Contact/>
+      <Toggle/>
     </div>
   );
 }
