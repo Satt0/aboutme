@@ -6,6 +6,7 @@ const CarouselP=()=>  {
   const src=useSelector(state=>state.language)
   const display=useSelector(state=>state.display)
   const lang=src[display].carousel;
+  
     return ( 
             <React.Fragment >
               <div className="intro" >               

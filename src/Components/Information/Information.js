@@ -20,18 +20,19 @@ const Information =()=> {
                        <li>{lang.detail.height}</li>                 
              </div>
                <div className="textitem" >
-               <li className="h4"  >Study at</li>
-               <li>Hanoi University of Science and Technology</li>
-                       <li>Major: Computer Engineer</li>
-                       <li>Academic year: 64th</li>
-                       <li>Bachelor Degree</li>                     
+         <li className="h4"  >{lang.study.title}</li>
+               <li>{lang.study.school}</li>
+         <li>{lang.study.major}</li>
+         <li>{lang.study.year}</li>
+         <li>{lang.study.degree}</li>                     
                </div>
                <div className="textitem" >
-               <li className="h4"  > Hobbies</li>
-               <li>Coding and Solving Algorithms</li>
-                       <li>Street Workout</li>
-                       <li>Playing Games</li>
-                       <li>Reading Books</li>
+         <li className="h4"  > {lang.hobby.title}</li>
+         <li>{lang.hobby.hobby}</li>
+              
+         <li>{lang.hobby.reading}</li>
+          <li>{lang.hobby.sport}</li>
+         <li>{lang.hobby.game}</li>
                </div>  
             </div></React.Fragment>
         );

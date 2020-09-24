@@ -3,9 +3,9 @@ const initState={
     language:{
         'vi':{
             nav:{
-                galery:'Anh',
-                contact:'Lien lac',
-                detail:'Thong tin'
+                galery:'Ảnh',
+                contact:'Liên lạc',
+                detail:'Thông tin'
             },
             carousel:{
                 title:"xin chao",
@@ -22,28 +22,70 @@ const initState={
                     weight:`Cân nặng: 65kg`
                 },
                 study:{
-
+                    title:'Học tại',
+                    school:"Đại học Bách khoa Hà Nội",
+                    major:'Chuyên ngành: Kỹ thuật máy tính',
+                    year:'Niên khóa : 64',
+                    degree:"Bằng: Cử nhân"
                 },
                 hobby:{
-
+                    title:'Sở thích',
+                    hobby:'Lập trình và giải thuật',
+                    sport:'Thể dục đường phố',
+                    reading:'Đọc sách',
+                    game:'chơi games'
                 }
             }
         }
         ,
         'en':{
-            title:'hello'
+            nav:{
+                galery:'Galery',
+                contact:'Contact',
+                detail:'Detail'
+            },
+            carousel:{
+                title:"Hello",
+                content:'My name is Tan, wellcome to my website!',
+                comment:'Take a look at my photo first!'
+            },
+            detail:{
+                detail:{
+                    title:'Myseft',
+                    name:`Name: Hoàng Minh Tân`,
+                    dateOfBirth:`Date of birth: 6/6/2001`,
+                    now:`Now: Single`,
+                    height:`Height: 1.73m`,
+                    weight:`Weight: 65kg`
+                },
+                study:{
+                        title:'Study at',
+                        school:"Hanoi University of Science and Technology",
+                        major:'Major: Computer Engineering',
+                        year:'Academic year: 64th',
+                        degree:"Bachelor Degree"
+                },
+                hobby:{
+                    title:'Hobbies',
+                    hobby:'Coding and solving algorithm',
+                    sport:'Street workout',
+                    reading:'Reading books',
+                    game:'Playing games'
+                    
+                }
+            }
         }
     }
     ,
     display:'vi'
 }
 const language=(state=initState.language,action)=>{
-    return state;
+    return state
 }
 const display=(state=initState.display,action)=>{
     if(action.type==='toggle/language')
     {
-        return {...state,display:action.payload}
+        return action.payload
     }
     return state
 }

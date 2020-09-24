@@ -1,15 +1,29 @@
 .toggle-lang{
-    position: absolute;
+    position: fixed;
     z-index: 1212121212;
-    color:blue;
+    color:white;
     font-size: 20 ;
     width:50px;
     height:50px;
-    background-color: white;
+    background-color: gray;
     top:500px;
     left: 0;
-    animation: slidedown 1s forwards;
+    animation: slidedown 1s ;
+    border-radius: 50%;
+    line-height: 46px;
+    transition: all .2s;
+    transform: translateX(0);
 }
+
+.hide{
+    opacity: 0.3;
+    transition: all .5s;
+    width:40px;
+    height:40px;
+    line-height: 36px;
+    transform: translateX(-14px);
+}
+
 @keyframes slidedown{
     from {
         transform: translateY(-400px);
