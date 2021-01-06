@@ -26,7 +26,7 @@ const initState={
                     school:"Đại học Bách khoa Hà Nội",
                     major:'Chuyên ngành: Kỹ thuật máy tính',
                     year:'Niên khóa : 64',
-                    degree:"Bằng: Cử nhân"
+                    degree:"Bằng: unknown"
                 },
                 hobby:{
                     title:'Sở thích',
@@ -63,7 +63,7 @@ const initState={
                         school:"Hanoi University of Science and Technology",
                         major:'Major: Computer Engineering',
                         year:'Academic year: 64th',
-                        degree:"Bachelor Degree"
+                        degree:"unknown"
                 },
                 hobby:{
                     title:'Hobbies',

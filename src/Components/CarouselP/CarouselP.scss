@@ -1,62 +1,10 @@
 @import '.././../App.scss';
-.intro{
-    text-shadow: 1px 1px gray;
-    animation: bouncing 7s infinite;
-    font-family: 'Comfortaa', cursive;
-    position: absolute; 
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-    overflow:hidden;
-color:white;
-    font-size: 1vw;
-    z-index: 12;
-    background-color: rgba(255, 250, 250, 0);
-    border:none;
-    margin-top: 30vh;
-    width:70vw;
-    
-}
-@keyframes bouncing{
-    0%{
-        transform: translateY(0);
-        opacity:1;
-       
-    }
-    20%{
-        
-       
-        transform: translateY(5%);
-        opacity:0.001;
-    }
-   
-    100%{
-        
-        transform:translateY(0);
-        opacity:1
-    }
 
-}
-#galery{
-    
-    .imgslide1{
-        background-image: url(./landscape/landscape1.jpg);
-        height:80vh;
-        background-size: cover;
-        background-position: center;
-    }
-    .imgslide2{
-        background-image: url(./landscape/landscape2.jpg);
-        height:80vh;
-        background-size: cover;
-        background-position: center;
-    }
-    .imgslide3{
-        background-image: url(./landscape/landscape3.jpg);
-        height:80vh;
-        background-size: cover;
-        background-position: center;
-    }
 
+.Galery{
+    position: relative;
+    width:100%;
+    height:90vh;
+    background-color: antiquewhite;
+    min-height: 600px;
 }
